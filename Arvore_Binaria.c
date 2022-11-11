@@ -172,25 +172,38 @@ int main()
     int idade, cod, r = 1;
     float altura, peso;
     No *raiz = inicializar();
-    /*No *temp = pesquisar(raiz, 10);
-    if (temp == NULL)
-        printf("Nao encontrou");
-    else
-        printf("Encontrou %i\n", *temp);
-    */
     imprimir(raiz);
-    /*raiz = remover(raiz,10);
-    imprimir(raiz);
-    */
     while (r != 5)
     {
+ /*Crie um menu com as seguintes opções:
+
+- incluir
+
+- buscar e imprimir (todos os campos de um elemento)
+
+- editar o valor de um elemento (buscar por uma chave e permitir alterar o valor correspondente)
+
+- excluir
+
+- imprimir todos elementos (de forma ordenada)
+
+- imprimir quantidade de elementos
+
+- informar altura da árvore
+
+- imprimir com estrutura de arvore (apresentando a forma que as chaves estão armazenadas).
+*/
         printf("\t\t\t\t    Seja bem vindo ao sistema da academia Phisical Boost\n");
         printf("\t\t\t\t\t        O que deseja fazer?\n\n");
-        printf("\t\t\t\t\t        1 - Inserir pessoas\n\n");
-        printf("\t\t\t\t\t        2 - Remover pessoas\n\n");
-        printf("\t\t\t\t\t        3 - Imprimir a arvore\n\n");
-        printf("\t\t\t\t\t        4 - Buscar pessoas\n\n");
-        printf("\t\t\t\t\t        5 - Fechar\n");
+        printf("\t\t\t\t\t        1 - incluir pessoas\n\n");
+        printf("\t\t\t\t\t        2 - Remover pessoa\n\n");
+        printf("\t\t\t\t\t        3 - Imprimir de forma ordenada\n\n");
+        printf("\t\t\t\t\t        4 - Imprimir quantidade de pessoas\n\n");
+        printf("\t\t\t\t\t        5 - Imprimir altura\n\n");
+        printf("\t\t\t\t\t        6 - Imprimir altura\n\n");
+        printf("\t\t\t\t\t        7 - Buscar e imprimir\n\n");
+        printf("\t\t\t\t\t        8 - Buscar e editar\n\n");
+        printf("\t\t\t\t\t        9 - Fechar\n");
         scanf("%d", &r);
         switch (r)
         {
